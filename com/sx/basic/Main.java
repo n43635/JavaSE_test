@@ -6,7 +6,8 @@ public class Main {
         boolean flag = true;
         if (true) {
             int i = 18;
-        } else
+        } else{
             System.out.println("Hello World!");
+        }
     }
 }
