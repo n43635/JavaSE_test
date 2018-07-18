@@ -19,12 +19,15 @@ import java.util.concurrent.*;
 public class Callable_Test {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
 
+        int c1 = 3;
+        int c2 = 5;
+
         //创建线程池
         ExecutorService es = Executors.newCachedThreadPool();
 
         //向线程池添加自定义类对象
-        Future<Integer> f1 = es.submit(new MyCallable(3));
-        Future<Integer> f2 = es.submit(new MyCallable(5));
+        Future<Integer> f1 = es.submit(new MyCallable(c1));
+        Future<Integer> f2 = es.submit(new MyCallable(c2));
 
         //获取线程返回结果
         System.out.println("3的阶乘结果为:"+f1.get());

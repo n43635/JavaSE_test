@@ -4,17 +4,17 @@ import java.util.Arrays;
 import java.util.Random;
 
 /**
- * 双色球生成,使用数组不适用集合
+ * 双色球生成,使用数组不使用集合
  */
 public class DoubleColorBalls {
 
-    //从数值库中随机生成指定长度数组,传入生成随机数位数和随机数范围最大值(最小值默认为1)
+    //从数值库中随机生成指定长度数组,传入生成随机数位数和随机数范围最大值
     public static int[] resultRandomNum(int ballNum, int maxNum){
 
         //生成随机数保存
         int[] resultNum = new int[ballNum];
 
-        //用于判断是否使用
+        //用于判断索引对应数值是否使用过
         boolean[] isUsed = new boolean[maxNum];
         Random random = new Random();
 
