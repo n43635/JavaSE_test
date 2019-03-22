@@ -13,7 +13,7 @@ package com.sx.SE.generic;
  **/
 public class GenericFristDemo {
     public static void main(String[] args) {
-        String[] words = {"my"+"name"+"is"+"SX"};
+        String[] words = {"my","name","is","SX"};
         Pair<String> mm = ArrayAlg.minmax(words);
         System.out.println("min:"+mm.getFirst());
         System.out.println("max:"+mm.getSecond());
