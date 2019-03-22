@@ -32,12 +32,4 @@ public class Pair<T> {
     public T getSecond() {
         return second;
     }
-
-    public void setFirst(T first) {
-        this.first = first;
-    }
-
-    public void setSecond(T second) {
-        this.second = second;
-    }
 }
